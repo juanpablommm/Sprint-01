@@ -26,38 +26,30 @@
 	</nav>
 	<main class="container-fluid">
 		<div class="row align-self-baseline">
-			<div class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-8 columnas-izquierda">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-8 col-xxl-8 columnas-izquierda">
 				<div class="col-12 p-4">
-					<h3 >Escribe el texto aqui</h3>
+					<h3>Escribe el texto aqui</h3>
 				</div>
-				<form action="" onsubmit="return encriptar(this)">
-					<div class="col-12 p-4">
+				<div class="col-12 p-4">
 
-						<textarea class="form-control p-4" id="exampleFormControlTextarea1" name="textarea" rows="10" cols="100">
-						</textarea>
-					</div>
-					<div class="col-12 p-4">
-						<label class="col-12 p-2"><small>⚠️ Solo letras minusculas y sin acentos</small></label>
-						<div class="d-flex justify-content-center"></div>
-						<input class="col-4 boton-encriptar" type="submit" name="encriptar" value="Encriptar">
-						<!-- <input class="col-4 boton-desencriptar" type="submit" name="desencriptar" value="Desencriptar"> -->
-					</div>
-				</form>
-				
+					<textarea autofocus class="form-control p-4" name="mensaje" rows="10" cols="100">
+					</textarea>
+				</div>
+				<div class="col-12 p-4">
+					<label class="col-12 p-2"><small>⚠️ Solo letras minusculas y sin acentos</small></label>
+					<div class="d-flex justify-content-center"></div>
+					<input class="col-4 boton-encriptar" onclick="encrytarMensaje()" type="submit" name="encriptar" value="Encriptar"/>
+					<input class="col-4 boton-desencriptar" onclick="desencrytarMensaje()" type="submit" name="desencriptar" value="Desencriptar"/>
+				</div>
 			</div>
 			<div class="col-12 col-md-6 col-lg-4 columnas-derecha d-flex align-items-start flex-column bd-highlight mb-3 border border-5">
-				<div class="mb-auto p-4 bd-highlight">
+				<div class="col-12 mb-auto p-4 bd-highlight">
 					<img src="./images/Muñeco.png">
 				</div>
-				<div class="p-4 bd-highlight">
-					<section>
-						<header>
-							<h4>Ningun mensaje fue encontrado</h4>
-						</header>
-						<p>
-							Ingresa el texto que deseas encriptar o desencriptar
-						</p>
-					</section>
+				<div class="col-12 p-4 bd-highlight">
+					<div class="mb-3">
+						<textarea disabled="false" class="form-control textarea-resultado" id="exampleFormControlTextarea1" rows="6" >Ningun mensaje fue encontrado. Ingresa el texto que sedeas encriptar o desencriptar</textarea>
+					</div>
 				</div>				
 			</div>
 		</div>
@@ -66,22 +58,120 @@
 
 	</aside>
 </body>
-<!-- <footer class="container-fluid">
-	<div class="row d-flex">
-		<div class="col">
-			<div">
+<div class="container my-5">
+	<!-- Footer -->
+	<footer
+	class="text-center text-lg-start text-dark"
+	style="background-color: #ECEFF1"
+	>
+	<!-- Section: Social media -->
+	<section
+	class="d-flex justify-content-between p-4 text-white"
+	style="background-color: #0A3871"
+	>
+	<!-- Left -->
+	<div class="me-5">
+		<span>Sprin 01 of Full-Stack Bootcamp wirh Alura Latan and Oracle:</span>
+	</div>
+	<!-- Left -->
 
-				<ul>
-					<li>
-						<a href="www.linkedin.com/in/juan-pablo-montoya-ospinal">LinkedIn</a>
-					</li>
-					<li>
-						<a href="https://github.com/juanpablommm">GitHub</a>
-					</li>
-				</ul>
-				
-				<label><small>Derechos Reservados &copy; 2022</small></label>
+	<!-- Right -->
+	<div>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-facebook-f"></i>
+		</a>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-twitter"></i>
+		</a>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-google"></i>
+		</a>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-instagram"></i>
+		</a>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-linkedin"></i>
+		</a>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-github"></i>
+		</a>
+	</div>
+	<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+	<div class="container text-center text-md-start mt-5">
+		<!-- Grid row -->
+		<div class="row mt-3">
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+				<!-- Content -->
+				<h6 class="text-uppercase fw-bold">Information</h6>
+				<hr
+				class="mb-4 mt-0 d-inline-block mx-auto"
+				style="width: 60px; background-color: #7c4dff; height: 2px"
+				/>
+				<p>
+					I'm Juan Pablo, I'm from Cali Colombia, I'm Java Developer
+				</p>
 			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+				<!-- Links -->
+				<h6 class="text-uppercase fw-bold">Technologies</h6>
+				<hr
+				class="mb-4 mt-0 d-inline-block mx-auto"
+				style="width: 60px; background-color: #7c4dff; height: 2px"
+				/>
+				<p>
+					<a href="#!" class="text-dark">Bootstrap</a>
+				</p>
+				<p>
+					<a href="#!" class="text-dark">JavaScrpit</a>
+				</p>
+				<p>
+					<a href="#!" class="text-dark">File Personal CSS</a>
+				</p>
+				<p>
+					<a href="#!" class="text-dark">HTML</a>
+				</p>
+			</div>
+			<!-- Grid column -->
+
+
+			<!-- Grid column -->
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+				<!-- Links -->
+				<h6 class="text-uppercase fw-bold">Contact</h6>
+				<hr
+				class="mb-4 mt-0 d-inline-block mx-auto"
+				style="width: 60px; background-color: #7c4dff; height: 2px"
+				/>
+				<p><i class="fas fa-home mr-3"></i><a href="https://github.com/juanpablommm">GitHub</a></p>
+				<p><i class="fas fa-envelope mr-3"></i><a href="juanpablomontoya618@gmail.com">Gmail</a></p>
+				<p><i class="fas fa-phone mr-3"></i><a href="https://www.linkedin.com/in/juan-pablo-montoya-ospinal">LinkedIn</a></p>
+			</div>
+			<!-- Grid column -->
 		</div>
-	</footer> -->
-	</html>
+		<!-- Grid row -->
+	</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div
+class="text-center p-3"
+style="background-color: rgba(0, 0, 0, 0.2)"
+>
+© 2020 Copyright
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+</div>
+<!-- End of .container -->
+</html>
