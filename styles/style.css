@@ -1,0 +1,40 @@
+.boton-encriptar{
+	color: #FFFFFF;
+	background: #0A3871;
+	box-sizing: border-box;
+	border-radius: 24px;
+}
+
+.boton-desencriptar{
+	background: #D8DFE8;
+	border: 1px solid #0A3871;
+	box-sizing: border-box;
+	border-radius: 24px;
+}
+
+.columnas-derecha{
+	background: #C0C0C0;
+	border-radius: 32px;
+}
+
+.columnas-izquierda{
+	border-radius: 32px;
+	
+}
+
+textarea{
+	resize: none;
+	font-family: andale-mono;
+	text-align: left;
+}
+
+h3{
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	font-family: andale-mono;
+}
+.textarea-resultado{
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	border-radius: 32px;
+}
